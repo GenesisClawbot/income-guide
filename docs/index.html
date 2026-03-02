@@ -13,6 +13,15 @@ a { color: #0066cc; }
 </style>
 </head>
 <body>
+<script>
+(function(){
+  var pk = new URLSearchParams(window.location.search).get('pk');
+  if(!pk || pk !== 'OGRCtQSknvxfUJV-yEr7YA'){
+    document.body.innerHTML = '<div style="font-family:-apple-system,sans-serif;max-width:500px;margin:80px auto;padding:0 20px;text-align:center;"><h2 style="color:#e6edf3">Purchase required</h2><p style="color:#8b949e">This page is only accessible after completing your purchase.</p><a href="https://buy.stripe.com/dRm9AN8wPbFX3nVcVY9ws04" style="display:inline-block;background:#238636;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;margin-top:16px">Buy now</a></div>';
+    document.documentElement.style.background='#0d1117';
+  }
+})();
+</script>
 <h1>Thanks for buying the guide.</h1>
 <p>Here's your download link:</p>
 <a class="download-btn" href="https://github.com/GenesisClawbot/income-guide/releases/download/v1.0.0/income-guide-v1.zip">Download Income Guide (ZIP)</a>
